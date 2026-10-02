@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 24px;
+  background-color: #1a1a1e;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-wrapper {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-header h2 {
+  margin: 0 0 24px 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.battlefield {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.fighter-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #282830;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.image-wrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.fighter-img {
+  max-width: 600px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.fighter-card h3 {
+  margin: 8px 0 4px 0;
+}
+
+.fighter-card p {
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.bar-bg {
+  width: 100%;
+  max-width: 320px;
+  height: 16px;
+  background-color: #444;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+
+.bar {
+  height: 100%;
+  transition: width 0.25s ease;
+}
+
+#player-bar {
+  background-color: #43a047;
+  width: 100%;
+}
+
+#boss-bar {
+  background-color: #e53935;
+  width: 100%;
+}
+
+.controls {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ff9800;
+  color: #fff;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #f57c00;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.restart-btn {
+  display: none;
+  width: 100%;
+  background-color: #2196f3;
+}
+
+.restart-btn:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.log-box {
+  width: 100%;
+  background-color: #282830;
+  border: 1px solid #3e3e4a;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.4;
+  min-height: 48px;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <header class="game-header">
+        <h2>Duel: Megumin vs Verdia</h2>
+      </header>
+
+      <main class="battlefield">
+        <section class="fighter-card">
+          <div class="image-wrapper">
+            <img id="player-avatar" class="fighter-img" alt="Player" />
+          </div>
+          <h3 id="player-name"></h3>
+          <p>HP: <span id="player-hp"></span></p>
+          <div class="bar-bg">
+            <div id="player-bar" class="bar"></div>
+          </div>
+        </section>
+
+        <section class="controls">
+          <div class="actions">
+            <button id="btn-attack">Staff Strike (35-55 HP)</button>
+            <button id="btn-explosion">EXPLOSION (180-260 / -self)</button>
+          </div>
+          <button id="btn-restart" class="restart-btn">Play Again</button>
+          <div class="log-box" id="log">Battle started! Your turn.</div>
+        </section>
+
+        <section class="fighter-card">
+          <div class="image-wrapper">
+            <img id="boss-avatar" class="fighter-img" alt="Boss" />
+          </div>
+          <h3 id="boss-name"></h3>
+          <p>HP: <span id="boss-hp"></span></p>
+          <div class="bar-bg">
+            <div id="boss-bar" class="bar"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
