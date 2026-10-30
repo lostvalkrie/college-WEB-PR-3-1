@@ -27,10 +27,19 @@
         <section class="controls">
           <div class="actions">
             <button id="btn-attack">Staff Strike (35-55 HP)</button>
-            <button id="btn-explosion">EXPLOSION (180-260 / -self)</button>
+            <button id="btn-special">EXPLOSION (180-260 / -self)</button>
           </div>
           <button id="btn-restart" class="restart-btn">Play Again</button>
           <div class="log-box" id="log">Battle started! Your turn.</div>
+
+          <div class="character-select-wrapper">
+            <label for="hero-select">Select Hero:</label>
+            <select id="hero-select">
+              <option value="0">Megumin (Mage)</option>
+              <option value="1">Darkness (Warrior)</option>
+              <option value="2">Aqua (Healer)</option>
+            </select>
+          </div>
         </section>
 
         <section class="fighter-card">
